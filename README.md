@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio
 
-## Getting Started
+A modern, animated portfolio website built with Next.js 16, featuring a blog with MDX support and a visually stunning hero section.
 
-First, run the development server:
+## 🚀 Features
+
+- **Animated Hero Section**: Eye-catching landing page with Framer Motion animations, gradient text, and floating orbs
+- **MDX Blog**: Full-featured blog system with markdown support, syntax highlighting, and frontmatter
+- **Modern UI**: Built with Tailwind CSS 4 and custom animations
+- **Type-Safe**: Fully typed with TypeScript
+- **Responsive Design**: Optimized for all screen sizes
+- **Dark Mode**: Beautiful dark theme with translucent navigation
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Content**: MDX with `next-mdx-remote`
+- **Syntax Highlighting**: Highlight.js with rehype plugins
+- **Package Manager**: pnpm
+
+## 📦 Key Dependencies
+
+- `next-mdx-remote` - Remote MDX content rendering
+- `gray-matter` - Parse frontmatter from markdown files
+- `framer-motion` - Animation library
+- `rehype-highlight` - Code syntax highlighting
+- `rehype-slug` & `rehype-autolink-headings` - Auto-generate heading IDs and links
+- `remark-gfm` - GitHub Flavored Markdown support
+- `@tailwindcss/typography` - Beautiful typography defaults
+
+## 🏃 Getting Started
+
+1. **Install dependencies**:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Learn More
+## 📝 Adding Blog Posts
 
-To learn more about Next.js, take a look at the following resources:
+Create markdown files in `content/blog/` with frontmatter:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```md
+---
+title: "Your Post Title"
+date: "2025-01-01"
+description: "A brief description"
+tags: ["tag1", "tag2"]
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Your content here...
+```
 
-## Deploy on Vercel
+Images for posts should be placed in `public/blog-images/[post-slug]/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+portfolio/
+├── app/                  # Next.js app directory
+│   ├── blog/            # Blog listing and individual posts
+│   ├── layout.tsx       # Root layout with navigation
+│   └── page.tsx         # Home page
+├── components/          # React components
+│   ├── hero-animated.tsx    # Animated hero section
+│   └── mdx-components.tsx   # Custom MDX components
+├── content/             # Blog content
+│   └── blog/           # Markdown blog posts
+├── lib/                # Utility functions
+│   └── blog.ts         # Blog post utilities
+└── public/             # Static assets
+    └── blog-images/    # Blog post images
+```
+
+## 🎨 Customization
+
+- **Hero Section**: Edit `components/hero-animated.tsx` to customize the landing page
+- **Navigation**: Modify `app/layout.tsx` for nav links and site metadata
+- **Styling**: Update Tailwind configuration in `tailwind.config.ts`
+- **Blog Components**: Customize MDX rendering in `components/mdx-components.tsx`
+
+## 🚢 Deployment
+
+Deploy easily on [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/portfolio)
+
+Or use the Vercel CLI:
+
+```bash
+pnpm build
+vercel --prod
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
