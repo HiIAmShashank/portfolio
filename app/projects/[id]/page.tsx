@@ -68,10 +68,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                             {project.name}
                         </h1>
                         <span className={`text-sm px-4 py-1.5 rounded-full font-medium ${project.status === 'live'
-                                ? 'bg-green-500/10 text-green-500 border border-green-500/20'
-                                : project.status === 'beta'
-                                    ? 'bg-yellow-500/10 text-yellow-500 border border-yellow-500/20'
-                                    : 'bg-muted text-muted-foreground border border-border'
+                            ? 'bg-green-500/10 text-green-500 border border-green-500/20'
+                            : project.status === 'beta'
+                                ? 'bg-yellow-500/10 text-yellow-500 border border-yellow-500/20'
+                                : 'bg-muted text-muted-foreground border border-border'
                             }`}>
                             {project.status === 'live' ? 'Live' : project.status === 'beta' ? 'Beta' : 'Coming Soon'}
                         </span>
