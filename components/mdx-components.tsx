@@ -46,7 +46,7 @@ function Callout({ children, type = 'info' }: { children: React.ReactNode; type?
 function CodeBlock({ children, ...props }: ComponentProps<'pre'>) {
     return (
         <div className="my-6 rounded-xl overflow-hidden border border-border shadow-lg">
-            <pre {...props} className="!m-0 !bg-muted">
+            <pre {...props} className="m-0! bg-muted!">
                 {children}
             </pre>
         </div>

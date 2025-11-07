@@ -11,7 +11,6 @@ interface ProjectPageProps {
 export async function generateStaticParams() {
     return PROJECTS.map((project) => ({
         id: project.id,
-        id: app.id,
     }));
 }
 
@@ -40,7 +39,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
     const { id } = await params;
-    const project = PROJECTS.find((p) => p.id === id);=== id);
+    const project = PROJECTS.find((p) => p.id === id);
 
     if (!project) {
         notFound();
