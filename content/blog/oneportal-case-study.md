@@ -11,7 +11,7 @@ Over the years our organization built dozens of internal tools. Whenever a team 
 
 ## Why We Created OnePortal
 
-OnePortal is a monorepo that combines modern tools—**Turborepo**, **Vite** and **TypeScript**—to create a **micro-frontend portal** that solves the problems we faced with SharePoint. It allows independent teams to build remote applications that plug into a shell but share a **consistent UI**, **centralized theme**, and **unified authentication**. 
+OnePortal is a monorepo that combines modern tools-**Turborepo**, **Vite** and **TypeScript**-to create a **micro-frontend portal** that solves the problems we faced with SharePoint. It allows independent teams to build remote applications that plug into a shell but share a **consistent UI**, **centralized theme**, and **unified authentication**. 
 
 A Turborepo generator scaffolds new remote apps with module federation, MSAL configuration, routing, layout and TypeScript support. A shared UI package exposes design tokens and components, while the shell application handles styling and theme. Remote applications can run stand-alone in development or be federated into the shell for a seamless user experience.
 
@@ -547,7 +547,7 @@ The generator, Storybook documentation and unified scripts lower the barrier to 
 - Example pages and components
 - Automated deployment scripts
 
-### 5. Authentication is Hard—But It Shouldn't Be
+### 5. Authentication is Hard-But It Shouldn't Be
 
 By wrapping MSAL in a factory and initializer, we hid the OAuth complexity, implemented robust host/remote strategies, and provided simple helpers for roles and user profiles. This encourages developers to implement secure flows without wrestling with MSAL.
 
@@ -619,7 +619,7 @@ OnePortal demonstrates that with the right architecture and tooling, you can tra
 
 ...we created a platform that dramatically improves both user experience and developer productivity.
 
-With OnePortal, our organization finally has a cohesive, modern portal that unites dozens of apps under a single experience—all without the limitations and complexity of SharePoint.
+With OnePortal, our organization finally has a cohesive, modern portal that unites dozens of apps under a single experience-all without the limitations and complexity of SharePoint.
 
 ---
 

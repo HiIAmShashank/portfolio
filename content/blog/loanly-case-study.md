@@ -61,7 +61,7 @@ The **Equated Monthly Installment (EMI)** formula is central to all calculators.
 ```typescript
 /**
  * Calculate monthly EMI
- * EMI = [P × R × (1+R)^N] / [(1+R)^N – 1]
+ * EMI = [P × R × (1+R)^N] / [(1+R)^N - 1]
  */
 export function calculateEMI(
   principal: number,

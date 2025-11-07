@@ -44,7 +44,7 @@ export default function HeroAnimated({ latestPosts }: { latestPosts: BlogPost[] 
                                 initial={{ opacity: 0, y: 40 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.8, duration: 0.6 }}
-                                className="pt-20"
+                                className=""
                             >
                                 <FeaturedProjectsSection />
                                 <LatestPostsSection posts={latestPosts} />

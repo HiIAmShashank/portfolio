@@ -101,35 +101,35 @@ export default function ResumePage() {
                             </div>
                             <div className="space-y-3 mt-4">
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Designed and developed a micro-frontend portal using Module Federation, Next.js, and Turborepo monorepo with pnpm workspaces, enabling 5+ independently deployable applications with shared Azure AD authentication and reducing build time and scaffolding by 50%.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Implemented comprehensive CI/CD pipeline using GitHub Actions and Turborepo caching, achieving 65% reduction in build times through intelligent dependency analysis and parallelized workflows, decreasing deployment time from 45 to 8 minutes.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Developed reusable component library using shadcn/ui and Tailwind CSS v4 with 30+ type-safe, accessible React components, eliminating CSS duplication across applications and reducing feature development time by 35%.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
-                                    <p>Optimized front-end performance through strategic code splitting, lazy loading, and TanStack Query caching strategies, reducing initial load times by 30% and API calls by 40% through intelligent stale-while-revalidate patterns.</p>
+                                    <span className="text-primary flex-shrink-0">›</span>
+                                    <p>Optimized front-end performance through strategic code splitting, lazy loading, and caching strategies, reducing initial load times by 30% and API calls by 40% through intelligent stale-while-revalidate patterns.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Implemented modern state management using TanStack Query, Zustand, and Context API for complex React applications, and built type-safe forms with TanStack Form and Zod validation reducing form errors by 70%.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Created comprehensive technical documentation including ADRs and Storybook component library, enabling 10+ developers to onboard to complex codebase within 2 weeks and reducing knowledge transfer time by 60%.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Automated dynamic feed generation for geo-targeted user content, driving a 25% increase in engagement through personalized experiences and interactive front-end displays.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Utilized Next.js for several high-traffic projects, leveraging server-side rendering and static site generation to improve performance and deliver better user experience.</p>
                                 </div>
                             </div>
@@ -149,23 +149,23 @@ export default function ResumePage() {
                             </div>
                             <div className="space-y-3 mt-4">
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Engineered front-end solutions using React and TypeScript, seamlessly integrating the Microsoft Graph API for secure data retrieval and improved user interactions using MSAL.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Developed a reusable and WCAG compliant component library improving UI standardization across organizational apps.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Implemented robust testing workflows with Jest and Mocha, reducing production defects by 45% and enhancing overall code reliability.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Collaborated with a 10+ developer team to design and deploy applications based on the repository pattern within micro-frontends, enabling modular and scalable architectures.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Implemented RabbitMQ messaging queues and Redis cache to enhance front-end responsiveness, resulting in a 45% improvement in performance and scalability.</p>
                                 </div>
                             </div>
@@ -180,32 +180,32 @@ export default function ResumePage() {
                                 </div>
                                 <div className="text-muted-foreground">
                                     <p>Mumbai, India</p>
-                                    <p>2017–2022</p>
+                                    <p>2017-2022</p>
                                 </div>
                             </div>
                             <div className="space-y-3 mt-4">
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Built and enhanced front-end solutions for multiple content management systems using React, AngularJS, and jQuery, integrating JavaScript, HTML, and CSS to create dynamic, user-friendly interfaces.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Collaborated with 5+ team members to modernize and optimize websites for over 30 clients, ensuring adherence to industry standards and best practices.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Streamlined deployments by managing CI/CD pipelines in Azure DevOps, boosting development productivity for projects involving 5+ contributors.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Improved performance through efficient handling of large data sets, employing techniques like viewport rendering and lazy loading to ensure speedy and responsive user experiences.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
-                                    <p>Led a team of 5+ developers through the entire project lifecycle—including requirements gathering, level-of-effort estimation, planning, development, and deployment—delivering organizational process improvements.</p>
+                                    <span className="text-primary flex-shrink-0">›</span>
+                                    <p>Led a team of 5+ developers through the entire project lifecycle-including requirements gathering, level-of-effort estimation, planning, development, and deployment-delivering organizational process improvements.</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary mt-1 flex-shrink-0">›</span>
+                                    <span className="text-primary flex-shrink-0">›</span>
                                     <p>Created and maintained component libraries using Storybook, enabling fast UI development, consistent design practices, and easy team-wide documentation.</p>
                                 </div>
                             </div>

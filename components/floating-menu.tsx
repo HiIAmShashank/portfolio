@@ -12,8 +12,7 @@ interface MenuItem {
 const MENU_ITEMS: MenuItem[] = [
     { name: 'Projects', href: '/projects' },
     { name: 'Blog', href: '/blog' },
-    { name: 'About Me', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About Me', href: '/about' },
 ];
 
 export function FloatingMenu() {
