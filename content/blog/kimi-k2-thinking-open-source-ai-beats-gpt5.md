@@ -68,7 +68,7 @@ Kimi K2 Thinking is built on a **Mixture-of-Experts (MoE)** architecture optimiz
 - **Context Window**: 256,000 tokens
 - **Quantization**: INT4 quantization-aware training (QAT)
 - **Inference Speed**: 2x faster than standard precision without accuracy loss
-- **License**: Modified MIT (effectively unrestricted for <100M MAU apps)
+- **License**: Modified MIT (effectively unrestricted for apps with &lt;100M MAU)
 
 ### What Makes It Special: The Reasoning Trace
 
@@ -80,11 +80,11 @@ Unlike traditional LLMs that produce direct responses, K2 outputs an auxiliary f
 User: "Analyze today's tech news and summarize key trends"
 
 K2 Internal Reasoning (visible in reasoning_content):
-1. Need current date → invoke date tool → November 9, 2025
-2. Search web for "tech news November 2025" → retrieve 10 articles
-3. Analyze topics: AI regulation (3 articles), chip shortage (2), quantum computing (2)...
-4. Identify pattern: regulation focus dominates
-5. Synthesize: compose summary emphasizing regulatory themes
+- Need current date → invoke date tool → November 9, 2025
+- Search web for "tech news November 2025" → retrieve 10 articles
+- Analyze topics: AI regulation (3 articles), chip shortage (2), quantum computing (2)...
+- Identify pattern: regulation focus dominates
+- Synthesize: compose summary emphasizing regulatory themes
 
 K2 Final Response:
 "Today's major tech trend centers on AI regulation..."
@@ -92,8 +92,8 @@ K2 Final Response:
 
 This transparency serves two purposes:
 
-1. **Debugging and trust**: Users can inspect how conclusions were reached
-2. **Long-horizon coherence**: The model maintains reasoning state across 200-300 sequential tool calls
+- **Debugging and trust**: Users can inspect how conclusions were reached
+- **Long-horizon coherence**: The model maintains reasoning state across 200-300 sequential tool calls
 
 ### Mixture-of-Experts Efficiency
 
@@ -130,13 +130,13 @@ Moonshot published a reference implementation showing K2 autonomously conducting
 
 **Workflow Steps (all automated):**
 
-1. **Planning**: "I need today's date, then I'll search for tech news, analyze themes, and compose a report"
-2. **Tool Invocation 1**: Call `get_current_date()` → `2025-11-09`
-3. **Tool Invocation 2**: Call `web_search("tech news November 2025")` → retrieve 15 URLs
-4. **Tool Invocations 3-17**: Call `fetch_article(url)` for each result, extract content
-5. **Analysis**: Identify recurring themes, categorize by topic
-6. **Synthesis**: Compose structured markdown report with sections
-7. **Output**: Return formatted news summary with sources
+- **Planning**: "I need today's date, then I'll search for tech news, analyze themes, and compose a report"
+- **Tool Invocation 1**: Call `get_current_date()` → `2025-11-09`
+- **Tool Invocation 2**: Call `web_search("tech news November 2025")` → retrieve 15 URLs
+- **Tool Invocations 3-17**: Call `fetch_article(url)` for each result, extract content
+- **Analysis**: Identify recurring themes, categorize by topic
+- **Synthesis**: Compose structured markdown report with sections
+- **Output**: Return formatted news summary with sources
 
 **Total tool calls**: 18  
 **Human intervention**: Zero  
@@ -159,11 +159,11 @@ K2's 60.2% represents the highest score ever recorded on this benchmark by any m
 
 **SWE-Bench Verified** tests whether models can autonomously fix real GitHub issues in Python repositories. The workflow requires:
 
-1. Understanding the issue description
-2. Navigating the codebase
-3. Identifying root cause
-4. Writing a fix
-5. Running tests to verify the solution
+- Understanding the issue description
+- Navigating the codebase
+- Identifying root cause
+- Writing a fix
+- Running tests to verify the solution
 
 K2's **71.3%** score means it successfully resolved 71.3% of real-world coding issues without human help.
 
