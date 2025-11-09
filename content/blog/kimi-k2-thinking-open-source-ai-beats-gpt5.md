@@ -245,7 +245,7 @@ This makes K2 **"one of the most permissively licensed frontier-class models cur
 
 K2's emergence isn't just a technical milestone—it's a **structural shift** in the AI industry.
 
-### 1. The Open-Closed Gap Has Collapsed
+### The Open-Closed Gap Has Collapsed
 
 For the first time, the highest-performing reasoning model on public benchmarks is not a proprietary system from OpenAI, Anthropic, or Google. It's an open-source model from a 2-year-old Chinese startup.
 
@@ -257,7 +257,7 @@ For the first time, the highest-performing reasoning model on public benchmarks 
 
 The frontier is no longer synonymous with closed systems. It's **collaborative and open**.
 
-### 2. Pressure on Proprietary AI Economics
+### Pressure on Proprietary AI Economics
 
 Just two days before K2's release, OpenAI CFO Sarah Friar sparked controversy at WSJ Tech Live by discussing the company's $1.4 trillion compute and data-center commitments, with comments widely interpreted as exploring taxpayer-backed loan guarantees.
 
@@ -272,7 +272,7 @@ Against this backdrop, K2's existence poses an uncomfortable question:
 
 > *If enterprises can get GPT-5-beating performance for free from an open-source model, why would they pay for proprietary APIs?*
 
-### 3. Enterprise Adoption of Open-Source AI
+### Enterprise Adoption of Open-Source AI
 
 Companies are already voting with their wallets. **Airbnb** recently revealed it uses **Alibaba's Qwen** (open-source) over OpenAI's proprietary models for most tasks, citing:
 
@@ -286,7 +286,7 @@ K2's benchmark leadership will accelerate this trend. Expect:
 - Consulting firms offering K2 deployment and fine-tuning services
 - Startups building products on K2 instead of GPT-5 APIs
 
-### 4. The Geopolitical Dimension: China's Open-Source Strategy
+### The Geopolitical Dimension: China's Open-Source Strategy
 
 K2 Thinking is the latest in a series of high-performance open-source releases from Chinese AI companies:
 
@@ -306,7 +306,7 @@ This represents a deliberate strategy: **lead through openness rather than close
 
 While U.S. companies race to build proprietary moats, Chinese firms are winning by **giving away the best technology for free**.
 
-### 5. The Sustainability Question
+### The Sustainability Question
 
 The most profound implication is economic: **Are mega-scale proprietary AI investments sustainable?**
 
@@ -328,7 +328,7 @@ And the answer increasingly appears to be: *"Not the companies building gigascal
 
 Several design decisions separate K2 from competitors:
 
-### 1. Reasoning Transparency
+### Reasoning Transparency
 
 The `reasoning_content` field is brilliant for two reasons:
 
@@ -342,13 +342,13 @@ GPT-5 and Claude also have "thinking" modes, but their reasoning traces are:
 
 K2's full transparency is a competitive advantage for enterprise deployments.
 
-### 2. INT4 Quantization-Aware Training
+### INT4 Quantization-Aware Training
 
 Most models are trained in 16-bit precision, then quantized to 4-bit for deployment (losing accuracy). K2 is **trained knowing it will run in INT4**, preserving full performance while doubling inference speed.
 
 This is critical for agentic workflows requiring hundreds of sequential inferences. Without QAT, reasoning quality degrades after 50-100 steps. K2 maintains coherence for 200-300 steps.
 
-### 3. 256k Context Window
+### 256k Context Window
 
 K2's 256,000-token context allows it to:
 - Analyze entire codebases (SWE-Bench requires this)
@@ -357,7 +357,7 @@ K2's 256,000-token context allows it to:
 
 Combined with the reasoning trace, this enables workflows impossible with smaller context windows.
 
-### 4. Sparse MoE at Scale
+### Sparse MoE at Scale
 
 1T parameters with 32B active is the sweet spot:
 
@@ -365,7 +365,7 @@ Combined with the reasoning trace, this enables workflows impossible with smalle
 - **Too dense** (100B+ active): Inference too slow/expensive
 - **32B active**: Best balance of capability and efficiency
 
-### 5. Permissive Licensing
+### Permissive Licensing
 
 The Modified MIT license is strategically brilliant:
 
@@ -454,10 +454,10 @@ The pattern is clear: **Open-source AI is not just catching up—it's leading.**
 
 ### Why This Matters
 
-1. **Democratization**: Frontier AI capability is no longer gatekept by a few corporations
-2. **Innovation**: Developers worldwide can build on K2, creating applications impossible with API-only models
-3. **Competition**: Proprietary providers must justify their pricing against free, better alternatives
-4. **Sustainability**: The industry shifts from "whoever spends the most wins" to "whoever optimizes best wins"
+- **Democratization**: Frontier AI capability is no longer gatekept by a few corporations
+- **Innovation**: Developers worldwide can build on K2, creating applications impossible with API-only models
+- **Competition**: Proprietary providers must justify their pricing against free, better alternatives
+- **Sustainability**: The industry shifts from "whoever spends the most wins" to "whoever optimizes best wins"
 
 ### The Historical Parallel: Linux vs Windows
 

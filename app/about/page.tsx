@@ -146,19 +146,19 @@ export default function AboutPage() {
                             <h3 className="text-xl font-semibold mb-4">Recent Wins (Mott MacDonald)</h3>
                             <div className="space-y-3">
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary flex-shrink-0">›</span>
+                                    <span className="text-primary shrink-0">›</span>
                                     <p>Built a micro-frontend portal with 5+ independently deployable apps, all sharing Azure AD auth</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary flex-shrink-0">›</span>
+                                    <span className="text-primary shrink-0">›</span>
                                     <p>Created a reusable component library (shadcn/ui + Tailwind v4) with 30+ accessible components</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary flex-shrink-0">›</span>
+                                    <span className="text-primary shrink-0">›</span>
                                     <p>Optimized performance via code splitting, lazy loading, Redis caching</p>
                                 </div>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary flex-shrink-0">›</span>
+                                    <span className="text-primary shrink-0">›</span>
                                     <p>Wrote solid docs (ADRs, Storybook) → 10+ devs onboarded in 2 weeks</p>
                                 </div>
                             </div>
@@ -170,23 +170,23 @@ export default function AboutPage() {
                         <h2 className="text-3xl font-bold mb-6 text-primary">How I Work</h2>
                         <div className="space-y-3 text-muted-foreground">
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p><span className="font-semibold">Platforms over one-offs:</span> I like building things other teams can reuse (component libraries, micro-frontends, shared auth).</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p><span className="font-semibold">Performance is a feature:</span> Code splitting, caching, and intelligent data fetching come in early, not at the end.</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p><span className="font-semibold">DX matters:</span> Good docs, Storybook, ADRs - those make teams faster.</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p><span className="font-semibold">Use the ecosystem:</span> If the org lives in Microsoft 365 / SharePoint / Azure / AWS / Google Workspaces, I integrate with it instead of fighting it.</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p><span className="font-semibold">Make UIs human:</span> Enterprise apps don&apos;t have to be ugly or confusing.</p>
                             </div>
                         </div>
@@ -207,19 +207,19 @@ export default function AboutPage() {
                         <h2 className="text-3xl font-bold mb-6 text-primary">Current Focus</h2>
                         <div className="space-y-3 text-muted-foreground">
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Getting better at front-end platform engineering: micro-frontends, monorepos, shared UI, and CI/CD</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Staying current with Next.js and React tooling for large teams</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Exploring AI-assisted tooling (Copilot Studio, OpenAI APIs) to speed up internal dev work</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Building experiences that are accessible and fast for large, global user bases</p>
                             </div>
                         </div>
@@ -231,15 +231,15 @@ export default function AboutPage() {
                         <p className="text-muted-foreground mb-6">I&apos;m open to:</p>
                         <div className="space-y-3 text-muted-foreground mb-6">
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Senior/Lead Frontend roles in product or internal-platform teams</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Projects that need micro-frontend setup, Next.js migration, or component library work</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Work that involves Microsoft 365 / Graph / SharePoint integration</p>
                             </div>
                         </div>
@@ -247,7 +247,7 @@ export default function AboutPage() {
                         <div className="grid md:grid-cols-2 gap-4 text-sm">
                             <div className="space-y-2">
                                 <div className="flex items-start gap-2">
-                                    <span className="font-semibold min-w-[80px]">Email:</span>
+                                    <span className="font-semibold min-w-20">Email:</span>
                                     <a
                                         href="mailto:shashankksgupta@gmail.com"
                                         className="text-primary hover:underline"
@@ -256,11 +256,11 @@ export default function AboutPage() {
                                     </a>
                                 </div>
                                 <div className="flex items-start gap-2">
-                                    <span className="font-semibold min-w-[80px]">Location:</span>
+                                    <span className="font-semibold min-w-20">Location:</span>
                                     <span className="text-muted-foreground">London, UK</span>
                                 </div>
                                 <div className="flex items-start gap-2">
-                                    <span className="font-semibold min-w-[80px]">Phone:</span>
+                                    <span className="font-semibold min-w-20">Phone:</span>
                                     <a
                                         href="tel:+447852870243"
                                         className="text-primary hover:underline"
@@ -271,7 +271,7 @@ export default function AboutPage() {
                             </div>
                             <div className="space-y-2">
                                 <div className="flex items-start gap-2">
-                                    <span className="font-semibold min-w-[80px]">LinkedIn:</span>
+                                    <span className="font-semibold min-w-20">LinkedIn:</span>
                                     <a
                                         href="https://www.linkedin.com/in/shashankguptadev"
                                         target="_blank"
@@ -282,7 +282,7 @@ export default function AboutPage() {
                                     </a>
                                 </div>
                                 <div className="flex items-start gap-2">
-                                    <span className="font-semibold min-w-[80px]">GitHub:</span>
+                                    <span className="font-semibold min-w-20">GitHub:</span>
                                     <a
                                         href="https://github.com/HiIAmShashank"
                                         target="_blank"
@@ -293,7 +293,7 @@ export default function AboutPage() {
                                     </a>
                                 </div>
                                 <div className="flex items-start gap-2">
-                                    <span className="font-semibold min-w-[80px]">Portfolio:</span>
+                                    <span className="font-semibold min-w-20">Portfolio:</span>
                                     <a
                                         href="https://sgupta.dev"
                                         target="_blank"
@@ -309,30 +309,30 @@ export default function AboutPage() {
 
                     {/* Quick Facts */}
                     <div className="glass p-8 rounded-2xl">
-                        <h2 className="text-3xl font-bold mb-6 text-primary">Quick Facts</h2>
+                        <h2 className="text-3xl font-bold mb-6 text-primary">TLDR</h2>
                         <div className="grid md:grid-cols-2 gap-4 text-muted-foreground">
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Senior Frontend Engineer based in London</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Built micro-frontend portal with 5+ apps and shared auth</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>65% CI/CD performance improvement via GitHub Actions + Turborepo</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Started in medicine, found my place in software</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Still like helping people learn - that started back in college</p>
                             </div>
                             <div className="flex gap-3">
-                                <span className="text-primary flex-shrink-0">›</span>
+                                <span className="text-primary shrink-0">›</span>
                                 <p>Graduated B.Sc. Computer Science with distinction (2014-2017)</p>
                             </div>
                         </div>
