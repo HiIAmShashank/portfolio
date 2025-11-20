@@ -10,6 +10,7 @@ import {
     HeroCTA,
     HeroTechStack,
 } from '@/components/hero';
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import type { BlogPost } from '@/components/cards';
 
 export default function HeroAnimated({ latestPosts }: { latestPosts: BlogPost[] }) {
@@ -40,15 +41,14 @@ export default function HeroAnimated({ latestPosts }: { latestPosts: BlogPost[] 
 
                         {/* Latest posts */}
                         {latestPosts.length > 0 && (
-                            <motion.div
-                                initial={{ opacity: 0, y: 40 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.8, duration: 0.6 }}
-                                className=""
-                            >
-                                <FeaturedProjectsSection />
-                                <LatestPostsSection posts={latestPosts} />
-                            </motion.div>
+                            <div className="space-y-24">
+                                <ScrollReveal delay={0.2}>
+                                    <FeaturedProjectsSection />
+                                </ScrollReveal>
+                                <ScrollReveal delay={0.4}>
+                                    <LatestPostsSection posts={latestPosts} />
+                                </ScrollReveal>
+                            </div>
                         )}
                     </motion.div>
                 </div>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { PERSONAL_INFO } from '@/lib/config/index';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header, Footer } from '@/components/layout';
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Shashank Gupta | sgupta.dev",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Header />
           <div className="pt-16">

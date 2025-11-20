@@ -138,9 +138,9 @@ body {
 
 /* Glass effect utility */
 @utility glass {
-  backdrop-filter: blur(12px);
-  background: color-mix(in oklch, var(--card) 70%, transparent);
-  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  background: color-mix(in oklch, var(--card) 60%, transparent);
+  border: 1px solid color-mix(in oklch, var(--border) 50%, transparent);
 }
 
 /* Glow effect utility */

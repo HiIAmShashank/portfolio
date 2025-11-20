@@ -23,12 +23,12 @@ export function BlogPostCard({ post, index = 0, delay = 0 }: BlogPostCardProps) 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: delay + index * 0.1 }}
-            whileHover={{ y: -8, scale: 1.02 }}
+            whileHover={{ y: -5, scale: 1.02 }}
             className="h-full"
         >
             <Link
                 href={`/blog/${post.slug}`}
-                className="group glass p-6 rounded-2xl hover:border-primary/50 transition-all h-full flex flex-col gap-4 hover:shadow-xl hover:glow"
+                className="group glass p-6 rounded-2xl border border-border/50 hover:border-primary/50 transition-all h-full flex flex-col gap-4 hover:shadow-lg hover:shadow-primary/5"
             >
                 <div className="flex items-center justify-between gap-3">
                     <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-tight flex-1">

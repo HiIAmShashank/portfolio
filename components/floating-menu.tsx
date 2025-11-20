@@ -19,12 +19,12 @@ export function FloatingMenu() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <>
+        <div className="md:hidden">
             {/* Menu Button */}
             <motion.button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-full font-medium shadow-lg hover:glow transition-shadow"
-                whileHover={{ scale: 1.05, y: -2 }}
+                className="flex items-center gap-2 px-3 py-2 bg-primary text-primary-foreground rounded-full font-medium shadow-lg hover:glow transition-shadow relative z-50"
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="Toggle menu"
             >
@@ -45,80 +45,30 @@ export function FloatingMenu() {
                         transition={{ duration: 0.2 }}
                     />
                 </div>
-                <span className="text-sm hidden sm:inline">Menu</span>
             </motion.button>
-
-            {/* Desktop: Horizontal Menu to the Left */}
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="absolute top-0 right-full mr-4 hidden md:flex gap-3"
-                    >
-                        {MENU_ITEMS.map((item, index) => (
-                            <motion.div
-                                key={item.name}
-                                initial={{ opacity: 0, x: 20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: 20 }}
-                                transition={{ delay: index * 0.05 }}
-                            >
-                                <Link
-                                    href={item.href}
-                                    onClick={() => setIsOpen(false)}
-                                    className="block"
-                                >
-                                    <motion.div
-                                        className="glass px-6 py-3 rounded-full text-foreground font-medium text-sm whitespace-nowrap border border-border hover:border-primary transition-colors"
-                                        whileHover={{
-                                            scale: 1.05,
-                                            y: -2
-                                        }}
-                                        whileTap={{ scale: 0.95 }}
-                                    >
-                                        {item.name}
-                                    </motion.div>
-                                </Link>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                )}
-            </AnimatePresence>
 
             {/* Mobile: Vertical Menu Below */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="absolute top-full right-0 mt-4 flex md:hidden flex-col gap-3 min-w-[160px]"
+                        initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                        className="absolute top-full right-0 mt-2 flex flex-col gap-2 min-w-[160px] p-2 bg-background/80 backdrop-blur-xl border border-border rounded-2xl shadow-xl z-40"
                     >
                         {MENU_ITEMS.map((item, index) => (
                             <motion.div
                                 key={item.name}
-                                initial={{ opacity: 0, y: -10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: index * 0.05 }}
                             >
                                 <Link
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="block"
+                                    className="block px-4 py-2 rounded-xl hover:bg-muted transition-colors text-sm font-medium"
                                 >
-                                    <motion.div
-                                        className="glass px-6 py-3 rounded-full text-foreground font-medium text-sm text-center border border-border hover:border-primary transition-colors"
-                                        whileHover={{
-                                            scale: 1.05,
-                                            y: -2
-                                        }}
-                                        whileTap={{ scale: 0.95 }}
-                                    >
-                                        {item.name}
-                                    </motion.div>
+                                    {item.name}
                                 </Link>
                             </motion.div>
                         ))}
@@ -134,10 +84,10 @@ export function FloatingMenu() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setIsOpen(false)}
-                        className="fixed inset-0 -z-10"
+                        className="fixed inset-0 bg-background/20 backdrop-blur-sm z-30"
                     />
                 )}
             </AnimatePresence>
-        </>
+        </div>
     );
 }
