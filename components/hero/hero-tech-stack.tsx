@@ -10,7 +10,7 @@ export function HeroTechStack() {
             style={{ animationDelay: '600ms', animationFillMode: 'both' }}
         >
             <p className="text-sm text-muted-foreground uppercase tracking-wider mb-4">Tech Stack</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3">
                 {[...TECH_STACK].sort((a, b) => a.name.localeCompare(b.name)).map((tech, index) => (
                     <TechBadge
                         key={tech.name}
