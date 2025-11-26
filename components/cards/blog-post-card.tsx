@@ -23,7 +23,7 @@ export function BlogPostCard({ post, index = 0, delay = 0 }: BlogPostCardProps) 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: delay + index * 0.1 }}
-            whileHover={{ y: -5, scale: 1.02 }}
+            whileHover={{ y: -5 }}
             className="h-full"
         >
             <Link
@@ -44,7 +44,7 @@ export function BlogPostCard({ post, index = 0, delay = 0 }: BlogPostCardProps) 
                             year: 'numeric',
                         })}
                     </time>
-                    <span className="flex items-center gap-1 text-primary text-xs font-medium group-hover:gap-2 transition-all">
+                    <span className="flex items-center gap-1 text-primary text-xs font-medium transition-all">
                         Read more
                         <ArrowRightIcon className="w-3 h-3" />
                     </span>

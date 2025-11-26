@@ -17,7 +17,7 @@ export function ProjectCard({ project, index = 0, delay = 0 }: ProjectCardProps)
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: delay + index * 0.1 }}
-            whileHover={{ y: -5, scale: 1.02 }}
+            whileHover={{ y: -5 }}
             className="h-full"
         >
             <Link
@@ -55,7 +55,7 @@ export function ProjectCard({ project, index = 0, delay = 0 }: ProjectCardProps)
                 </div>
                 <div className="flex items-center justify-between pt-2 border-t border-border/50">
                     <span className="text-xs text-muted-foreground">{project.features.length} features</span>
-                    <span className="flex items-center gap-1 text-primary text-xs font-medium group-hover:gap-2 transition-all">
+                    <span className="flex items-center gap-1 text-primary text-xs font-medium transition-all">
                         View project
                         <ArrowRightIcon className="w-3 h-3" />
                     </span>
