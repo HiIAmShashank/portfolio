@@ -11,7 +11,7 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ title, viewAllHref, viewAllText = 'View all' }: SectionHeaderProps) {
     return (
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 md:gap-0 mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">{title}</h2>
             <Link
                 href={viewAllHref}

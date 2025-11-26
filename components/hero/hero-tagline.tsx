@@ -5,8 +5,8 @@ import { PERSONAL_INFO } from '@/lib/config/index';
 
 const COLOR_WORDS: Record<string, string> = {
     elegant: 'text-primary',
-    performant: 'text-secondary',
-    scalable: 'text-accent-foreground',
+    performant: 'text-primary',
+    scalable: 'text-primary',
 };
 
 export function HeroTagline() {

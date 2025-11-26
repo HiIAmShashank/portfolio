@@ -17,7 +17,7 @@ export function TechBadge({ name, icon, color, delay = 0 }: TechBadgeProps) {
 
     return (
         <div
-            className="glass px-4 py-2.5 rounded-lg text-sm font-medium text-foreground hover:shadow-lg hover:glow cursor-default transition-all duration-200 hover:-translate-y-1.5 hover:scale-105 active:scale-95 animate-in fade-in slide-in-from-bottom-4 flex items-center justify-start w-full"
+            className="glass px-4 py-2.5 rounded-lg text-sm font-medium text-foreground hover:shadow-lg hover:glow cursor-default transition-all duration-200 animate-in fade-in slide-in-from-bottom-4 flex items-center justify-start w-full"
             style={{
                 '--tech-color': color,
                 animationDelay: `${delay * 1000}ms`,

@@ -16,13 +16,10 @@ export function HeroCTA() {
         >
             <Link
                 href="/projects"
-                className="group relative px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl overflow-hidden transition-all hover:scale-105 hover:shadow-xl hover:glow"
+                className="group relative px-6 py-3 bg-background border border-border/50 rounded-lg font-medium text-foreground hover:text-primary hover:border-primary/50 hover:shadow-sm transition-all duration-300 flex items-center gap-2"
             >
-                <span className="relative z-10 flex items-center gap-2">
-                    View My Projects
-                    <ArrowRightIcon className="group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
+                <span>View My Projects</span>
+                <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
 
             {SOCIAL_LINKS.filter((link) => ['GitHub', 'LinkedIn'].includes(link.name)).map((link) => (
